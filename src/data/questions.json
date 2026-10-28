@@ -1,0 +1,353 @@
+[
+  {
+    "id": "q1",
+    "stepNumber": 1,
+    "section": "ตอนที่ 1 ข้อมูลทั่วไปของผู้ตอบ",
+    "key": "gender",
+    "title": "เพศ",
+    "subtitle": "เลือก 1 ข้อ",
+    "type": "single_choice",
+    "required": true,
+    "options": [
+      { "id": "male", "label": "ชาย", "icon": "User" },
+      { "id": "female", "label": "หญิง", "icon": "User" },
+      { "id": "other", "label": "อื่น ๆ", "icon": "Users" }
+    ]
+  },
+  {
+    "id": "q2",
+    "stepNumber": 2,
+    "section": "ตอนที่ 1 ข้อมูลทั่วไปของผู้ตอบ",
+    "key": "age",
+    "title": "อายุ",
+    "subtitle": "กรอกอายุเป็นตัวเลข (ปี)",
+    "type": "number_input",
+    "required": true,
+    "placeholder": "เช่น 20"
+  },
+  {
+    "id": "q3",
+    "stepNumber": 3,
+    "section": "ตอนที่ 1 ข้อมูลทั่วไปของผู้ตอบ",
+    "key": "academicYear",
+    "title": "ชั้นปี",
+    "subtitle": "เลือกระดับชั้นปีที่กำลังศึกษาอยู่",
+    "type": "single_choice",
+    "required": true,
+    "options": [
+      { "id": "year_1", "label": "ปี 1" },
+      { "id": "year_2", "label": "ปี 2" },
+      { "id": "year_3", "label": "ปี 3" },
+      { "id": "year_4", "label": "ปี 4" },
+      { "id": "year_other", "label": "อื่น ๆ" }
+    ]
+  },
+  {
+    "id": "q4",
+    "stepNumber": 4,
+    "section": "ตอนที่ 1 ข้อมูลทั่วไปของผู้ตอบ",
+    "key": "major",
+    "title": "สาขาวิชา",
+    "subtitle": "เลือก 1 ข้อ (คณะเทคโนโลยีอุตสาหกรรม)",
+    "type": "single_choice",
+    "required": true,
+    "options": [
+      { "id": "major_1", "label": "วิศวกรรมการก่อสร้าง ขนส่งและโลจิสติกส์" },
+      { "id": "major_2", "label": "วิศวกรรมการจัดการอุตสาหกรรม" },
+      { "id": "major_3", "label": "วิศวกรรมไฟฟ้าอุตสาหกรรม" },
+      { "id": "major_4", "label": "ออกแบบผลิตภัณฑ์อุตสาหกรรม" },
+      { "id": "major_5", "label": "การจัดการงานวิศวกรรม" },
+      { "id": "major_6", "label": "วิศวกรรมยานยนต์ไฟฟ้า" },
+      { "id": "major_7", "label": "สถาปัตยกรรม" }
+    ]
+  },
+  {
+    "id": "q5",
+    "stepNumber": 5,
+    "section": "ตอนที่ 1 ข้อมูลทั่วไปของผู้ตอบ",
+    "key": "ridingExperience",
+    "title": "ท่านมีประสบการณ์ใช้รถจักรยานยนต์มาแล้วเป็นระยะเวลาเท่าใด",
+    "subtitle": "เลือกระยะเวลาประสบการณ์ขับขี่",
+    "type": "single_choice",
+    "required": true,
+    "options": [
+      { "id": "less_than_1", "label": "น้อยกว่า 1 ปี" },
+      { "id": "1_to_3", "label": "1–3 ปี" },
+      { "id": "4_to_6", "label": "4–6 ปี" },
+      { "id": "7_to_9", "label": "7–9 ปี" },
+      { "id": "10_plus", "label": "10 ปีขึ้นไป" }
+    ]
+  },
+  {
+    "id": "q6",
+    "stepNumber": 6,
+    "section": "ส่วนที่ 1: เจตคติและความเชื่อเกี่ยวกับการสวมหมวกนิรภัย",
+    "key": "attitude_1",
+    "title": "1.1) ท่านเชื่อว่าการสวมหมวกนิรภัยสามารถช่วยลดความรุนแรงของการบาดเจ็บที่ศีรษะเมื่อเกิดอุบัติเหตุได้",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q7",
+    "stepNumber": 7,
+    "section": "ส่วนที่ 1: เจตคติและความเชื่อเกี่ยวกับการสวมหมวกนิรภัย",
+    "key": "attitude_2",
+    "title": "1.2) ท่านคิดว่าการสวมหมวกนิรภัยเป็นสิ่งจำเป็นสำหรับนักศึกษาที่ขับขี่หรือโดยสารรถจักรยานยนต์",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q8",
+    "stepNumber": 8,
+    "section": "ส่วนที่ 1: เจตคติและความเชื่อเกี่ยวกับการสวมหมวกนิรภัย",
+    "key": "attitude_3",
+    "title": "1.3) ท่านเห็นว่าการขับขี่รถจักรยานยนต์โดยไม่สวมหมวกนิรภัยเป็นพฤติกรรมที่มีความเสี่ยงต่อการบาดเจ็บรุนแรงเมื่อเกิดอุบัติเหตุ",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q9",
+    "stepNumber": 9,
+    "section": "ส่วนที่ 1: เจตคติและความเชื่อเกี่ยวกับการสวมหมวกนิรภัย",
+    "key": "attitude_4",
+    "title": "1.4) ท่านเห็นว่าความร้อน ความอึดอัด หรือความไม่สะดวกในการสวมหมวกนิรภัย ไม่ใช่เหตุผลที่เพียงพอที่จะหลีกเลี่ยงการสวมหมวกนิรภัย",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q10",
+    "stepNumber": 10,
+    "section": "ส่วนที่ 2: การอิทธิพลทางสังคมและการคล้อยตามกลุ่มอ้างอิง",
+    "key": "social_1",
+    "title": "2.1) ท่านคิดว่าครอบครัวของท่านคาดหวังให้ท่านสวมหมวกนิรภัยทุกครั้งเมื่อขับขี่หรือโดยสารรถจักรยานยนต์",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q11",
+    "stepNumber": 11,
+    "section": "ส่วนที่ 2: การอิทธิพลทางสังคมและการคล้อยตามกลุ่มอ้างอิง",
+    "key": "social_2",
+    "title": "2.2) ครอบครัวหรือเพื่อนของท่านสนับสนุนให้ท่านสวมหมวกนิรภัยทุกครั้ง",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q12",
+    "stepNumber": 12,
+    "section": "ส่วนที่ 2: การอิทธิพลทางสังคมและการคล้อยตามกลุ่มอ้างอิง",
+    "key": "social_3",
+    "title": "2.3) ท่านคิดว่านักศึกษาหรือคนส่วนใหญ่ที่ใช้รถจักรยานยนต์ควรสวมหมวกนิรภัยทุกครั้ง",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q13",
+    "stepNumber": 13,
+    "section": "ส่วนที่ 2: การอิทธิพลทางสังคมและการคล้อยตามกลุ่มอ้างอิง",
+    "key": "social_4",
+    "title": "2.4) ท่านเห็นว่าการรณรงค์ให้นักศึกษาสวมหมวกนิรภัย 100% ภายในมหาวิทยาลัยเป็นสิ่งที่ดีและควรปฏิบัติตาม",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q14",
+    "stepNumber": 14,
+    "section": "ส่วนที่ 3: การรับรู้ความสามารถในการควบคุมพฤติกรรม",
+    "key": "control_1",
+    "title": "3.1) ท่านสามารถสวมหมวกนิรภัยทุกครั้งที่ขับขี่หรือโดยสารรถจักรยานยนต์",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q15",
+    "stepNumber": 15,
+    "section": "ส่วนที่ 3: การรับรู้ความสามารถในการควบคุมพฤติกรรม",
+    "key": "control_2",
+    "title": "3.2) แม้ว่าท่านจะรีบเดินทาง ท่านสามารถสวมหมวกนิรภัยก่อนขับขี่รถจักรยานยนต์",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q16",
+    "stepNumber": 16,
+    "section": "ส่วนที่ 3: การรับรู้ความสามารถในการควบคุมพฤติกรรม",
+    "key": "control_3",
+    "title": "3.3) ท่านสามารถควบคุมตนเองให้สวมหมวกนิรภัยทุกครั้งที่ขับขี่หรือโดยสารรถจักรยานยนต์ แม้ไม่มีผู้อื่นคอยเตือน",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q17",
+    "stepNumber": 17,
+    "section": "ส่วนที่ 3: การรับรู้ความสามารถในการควบคุมพฤติกรรม",
+    "key": "control_4",
+    "title": "3.4) ท่านสามารถตัดสินใจสวมหมวกนิรภัยได้ แม้ว่าคนรอบข้างหรือเพื่อนจะไม่สวมหมวกนิรภัย",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q18",
+    "stepNumber": 18,
+    "section": "ส่วนที่ 4: ความตั้งใจในการสวมหมวกนิรภัย",
+    "key": "intent_1",
+    "title": "4.1) ท่านตั้งใจที่จะสวมหมวกนิรภัยทุกครั้งที่ขับขี่หรือโดยสารรถจักรยานยนต์",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q19",
+    "stepNumber": 19,
+    "section": "ส่วนที่ 4: ความตั้งใจในการสวมหมวกนิรภัย",
+    "key": "intent_2",
+    "title": "4.2) ท่านจะพยายามสวมหมวกนิรภัยอย่างสม่ำเสมอทุกครั้งที่ใช้รถจักรยานยนต์",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q20",
+    "stepNumber": 20,
+    "section": "ส่วนที่ 4: ความตั้งใจในการสวมหมวกนิรภัย",
+    "key": "intent_3",
+    "title": "4.3) ท่านมีแผนที่จะปฏิบัติตามกฎหมายเกี่ยวกับการสวมหมวกนิรภัยทุกครั้ง",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  },
+  {
+    "id": "q21",
+    "stepNumber": 21,
+    "section": "ส่วนที่ 4: ความตั้งใจในการสวมหมวกนิรภัย",
+    "key": "intent_4",
+    "title": "4.4) แม้การสวมหมวกนิรภัยจะทำให้รู้สึกร้อนหรือไม่สะดวก ท่านยังคงตั้งใจที่จะสวมหมวกนิรภัยทุกครั้ง",
+    "subtitle": "ระดับความคิดเห็น (Likert Scale)",
+    "type": "likert_scale",
+    "required": true,
+    "options": [
+      { "id": "strongly_agree", "label": "เห็นด้วยอย่างยิ่ง", "score": 5 },
+      { "id": "agree", "label": "เห็นด้วย", "score": 4 },
+      { "id": "neutral", "label": "ไม่แน่ใจ", "score": 3 },
+      { "id": "disagree", "label": "ไม่เห็นด้วย", "score": 2 },
+      { "id": "strongly_disagree", "label": "ไม่เห็นด้วยอย่างยิ่ง", "score": 1 }
+    ]
+  }
+]

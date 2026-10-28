@@ -1,0 +1,8 @@
+{
+  "name": "Remix Helmet",
+  "description": "แบบสอบถามเพื่อการวิจัย ศึกษาพฤติกรรมการสวมหมวกนิรภัยของนักศึกษาคณะเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยราชภัฏนครราชสีมา",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
